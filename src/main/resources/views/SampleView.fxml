@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.121"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="iuh.se.dhktpm11a.controller.SampleController">
+
+    <Label layoutX="230.0" layoutY="93.0" text="This is sample view" />
+    <Button fx:id="btn_showAllDia" layoutX="235.0" layoutY="117.0" onAction="#showAllDia"
+            text="Show all Disks" />
+    <Button onAction="#changeView"/>
+    <TextArea fx:id="ta_diaList" layoutX="61.0" layoutY="159.0" />
+</AnchorPane>
