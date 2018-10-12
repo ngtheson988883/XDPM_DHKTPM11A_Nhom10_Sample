@@ -2,20 +2,22 @@ package iuh.se.dhktpm11a.model.entity;
 
 import org.hibernate.annotations.Type;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.util.Objects;
 
 @Entity
+@Table(name = "Disk")
 public class Dia {
     @Id
     @GeneratedValue
+    @Column(name = "id")
     private String maDia;
+    @Column(name = "rentDetailId")
     private String maChiTietPhieuThue;
+    @Column(name = "titleId")
     private String maTieuDe;
     @Type(type="org.hibernate.type.StringNVarcharType")
+    @Column(name = "status")
     private String trangThai;
 
     public Dia(String maChiTietPhieuThue, String maTieuDe, String trangThai) {

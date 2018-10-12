@@ -13,5 +13,6 @@
     <Button fx:id="btn_showAllDia" layoutX="235.0" layoutY="117.0" onAction="#showAllDia"
             text="Show all Disks" />
     <Button onAction="#changeView"/>
+
     <TextArea fx:id="ta_diaList" layoutX="61.0" layoutY="159.0" />
 </AnchorPane>
